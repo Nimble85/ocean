@@ -72,9 +72,7 @@ namespace ConsoleApp1
 
             }
 
-
         /// отображение игрового поля
-
         public void Draw()
         {
             //Call
@@ -83,7 +81,6 @@ namespace ConsoleApp1
                 // Cell
                 for (int j = 0; j < _cells.GetLength(1); j++)
                 {
-
                     if (_cells[i, j] != null)
                     {
                         Console.Write(_cells[i, j].GetImage());
@@ -92,13 +89,10 @@ namespace ConsoleApp1
                     {
                         Console.Write(' ');     //Вывод пустой ячейки
                     }
-
                 }
                 Console.WriteLine();
                 }
-
-        }
-        
-        private Cell[,] _cells = null;
+            }
+       private Cell[,] _cells = null;
     }
 }
