@@ -6,7 +6,6 @@ namespace ConsoleApp1
 {
     abstract class Cell
     {
-
         public Cell(Ocean owner)
         {
             _owner = owner;
