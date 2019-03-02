@@ -18,7 +18,7 @@ namespace ConsoleApp1
              }
         public override char GetImage()
              {
-            return '#';
+                 return '#';
              }
     }
 }
