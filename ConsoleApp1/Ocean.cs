@@ -35,31 +35,31 @@ namespace ConsoleApp1
                 for (int j = 0; j < _cells.GetLength(1); j++)
                 {
                     if(_cells[i, j] != null) //Активирование деятельности наследия Cell
-                        {
+                       {
                         _cells[i, j].Process();
-                         }
+                       }
                 }
             }
         }
 
 
                 public int Widht
-        {
+                {
                    get
                    {
-                           return _cells.GetLength(1);
+                        return _cells.GetLength(1);
                     }
-        }
+                 }
 
 
                 public int Height
-                        {
-                            get
-                            {
-                                return _cells.GetLength(0);
-                            }
-                        }
-/// </summary>
+                {
+                    get
+                      {
+                         return _cells.GetLength(0);
+                       }
+                 }
+
 
         /// <summary>
         public bool Move(Cell c, int y, int x )
