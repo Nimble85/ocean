@@ -35,9 +35,6 @@ namespace ConsoleApp1
             Console.Write("Press any key ...");
             Console.ReadKey();
         }
-
-
-
         private static void FillFakeData(Ocean o)
         {
             #region  Добавление преград
