@@ -9,17 +9,16 @@ namespace ConsoleApp1
         public const char OBSTRACT_IMAGE = '#';
         public Obstacle(Ocean owner)
             :base(owner)
-        { 
-}
-
+    { 
+    
+    }
         public override void Process()
-        {
-          //  throw new NotImplementedException();
-        }
-
+             {
+                //  throw new NotImplementedException();
+             }
         public override char GetImage()
-        {
+             {
             return '#';
-        }
+             }
     }
 }
