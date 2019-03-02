@@ -43,26 +43,23 @@ namespace ConsoleApp1
         }
 
 
-                public int Widht
+        public int Widht
+        {
+             get
+               {
+                 return _cells.GetLength(1);
+               }
+         }
+
+         public int Height
+          {
+              get
                 {
-                   get
-                   {
-                        return _cells.GetLength(1);
-                    }
+                  return _cells.GetLength(0);
                  }
-
-
-                public int Height
-                {
-                    get
-                      {
-                         return _cells.GetLength(0);
-                       }
-                 }
-
-
-        /// <summary>
-        public bool Move(Cell c, int y, int x )
+            }
+      
+          public bool Move(Cell c, int y, int x )
             {
                 if (_cells[y, x] != null)
                         {
@@ -77,7 +74,6 @@ namespace ConsoleApp1
 
 
         /// отображение игрового поля
-
 
         public void Draw()
         {
