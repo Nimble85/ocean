@@ -89,10 +89,10 @@ namespace ConsoleApp1
                     {
                         Console.Write(' ');     //Вывод пустой ячейки
                     }
-                }
-                Console.WriteLine();
-                }
-            }
+                    }
+                         Console.WriteLine();
+                    }
+                 }
        private Cell[,] _cells = null;
     }
 }
