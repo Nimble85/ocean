@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,11 +7,9 @@ namespace ConsoleApp1
     class Prey :Cell
     {
         public const char PRAY_IMAGE = 'F';
-
         public Prey(Ocean owner)
                 :base (owner)
         {
-
         }
 
         public override void Process()
@@ -36,10 +34,10 @@ namespace ConsoleApp1
             Y = newYCoord;
         }
         
-        private void GetNewPosition(Direction rndDirect, ref int newXCoord, ref int newYCoord) //// ----
-        {//weight - do not find
-            switch (rndDirect)
-            {
+        private void GetNewPosition(Direction rndDirect, ref int newXCoord, ref int newYCoord) 
+        {
+                switch (rndDirect)
+           {
                 case Direction.Up:
                     if (newYCoord > 0)
                     {
@@ -73,15 +71,11 @@ namespace ConsoleApp1
                 default:
                     break;
             }
-
-
-           
-            }
-
+     }
 
         public override char GetImage()
-        {
-            return PRAY_IMAGE;
-        }
+            {
+               return PRAY_IMAGE;
+            }
     }
 }
