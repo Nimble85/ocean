@@ -5,7 +5,6 @@ using System.Text;
 namespace ConsoleApp1
 {
 
-
     class Ocean
     {
         public Ocean(int widht, int height)
@@ -15,7 +14,6 @@ namespace ConsoleApp1
             // new Ceel
             _cells = new Cell[height, widht];
         }
-
 
         public bool Add(Cell newCell)
         {
@@ -27,7 +25,6 @@ namespace ConsoleApp1
 
             return true;
         }
-
 
         public void RunStep()
         {
@@ -43,21 +40,16 @@ namespace ConsoleApp1
                          }
                 }
             }
-
-
         }
-
-
-/// <summa
 
 
                 public int Widht
         {
-                     get
-                     {
+                   get
+                   {
                            return _cells.GetLength(1);
-                       }
                     }
+        }
 
 
                 public int Height
