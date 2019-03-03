@@ -8,13 +8,9 @@ namespace ConsoleApp1
     {
         public const char PREDATOR_IMAGE = 'S';
 
-        public Predator(Ocean owner) : base(owner)
+        public Predator(Ocean owner) 
+            : base(owner)
         {
-        }
-
-        public override void Process()
-        {
-         //   throw new NotImplementedException();
         }
 
         public override char GetImage()
