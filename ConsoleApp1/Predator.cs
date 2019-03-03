@@ -13,6 +13,11 @@ namespace ConsoleApp1
         {
         }
 
+        public override void Process()
+        {
+            //   throw new NotImplementedException();
+        }
+
         public override char GetImage()
         {
             return PREDATOR_IMAGE;
