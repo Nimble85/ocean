@@ -11,7 +11,6 @@ namespace ConsoleApp1
             _owner = owner;
         }
 
-
         public int X { get; set; }
         public int Y { get; set; }
 
