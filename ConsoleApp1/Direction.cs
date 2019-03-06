@@ -16,6 +16,5 @@ namespace ConsoleApp1
         Left,
         Right,
         Down
-
     }
 }
