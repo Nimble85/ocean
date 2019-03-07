@@ -12,28 +12,27 @@ namespace ConsoleApp1
 
             FillFakeData(o);
 
-            // o.Draw();
-
+            // выполняем STEPS_COUNT шагов
             for (int i = 0; i < STEP_COUNT; i++)
             {
                 Console.Clear();
                 o.Draw();
                 o.RunStep();
 
-                Console.Write("Press any key ...");
-                o.RunStep();
+                Console.Write("Press any key to continue...");
+                Console.ReadKey();
             }
         Console.Clear();
         o.Draw();
-         //   Direction d1 = Direction.Right;
-         //  int d1Int
-         //   Direction d1 = OceanRandomizer.GetRandomDirection();
-         //   Direction d2 = OceanRandomizer.GetRandomDirection();
-         //   Direction d3 = OceanRandomizer.GetRandomDirection();
-         //   Direction d4 = OceanRandomizer.GetRandomDirection();
+        //   Direction d1 = Direction.Right;
+        //   int d1Int
+        //   Direction d1 = OceanRandomizer.GetRandomDirection();
+        //   Direction d2 = OceanRandomizer.GetRandomDirection();
+        //   Direction d3 = OceanRandomizer.GetRandomDirection();
+        //   Direction d4 = OceanRandomizer.GetRandomDirection();
 
-            Console.Write("Press any key ...");
-            Console.ReadKey();
+        Console.Write("Press any key ...");
+        Console.ReadKey();
         }
         private static void FillFakeData(Ocean o)
         {
@@ -46,8 +45,7 @@ namespace ConsoleApp1
             o.Add(obst1);
             o.Add(obst2);
             o.Add(obst3);
-
-
+            
             #endregion
 
             #region  Добавление хищников
@@ -59,8 +57,7 @@ namespace ConsoleApp1
             o.Add(pred1);
             o.Add(pred2);
             o.Add(pred3);
-
-
+            
             #endregion
             
             #region  Добавление добычи
@@ -68,13 +65,11 @@ namespace ConsoleApp1
             Prey pr1 = new Prey(o) { X = 18, Y = 3 };
             Prey pr2 = new Prey(o) { X = 8, Y = 5 };
             Prey pr3 = new Prey(o) { X = 11, Y = 8 };
-
-
+            
             o.Add(pr1);
             o.Add(pr2);
             o.Add(pr3);
-
-
+            
             #endregion
         }
     }
